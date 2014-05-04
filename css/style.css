@@ -1,7 +1,7 @@
 html {
   height: 100%; }
   html body {
-    background: #3498DB;
+    background: #A3DAE3;
     height: 100%; }
     html body .full {
       width: 100%;
@@ -9,12 +9,71 @@ html {
       margin-right: auto;
       max-width: initial; }
     html body #main {
-      height: 80%;
-      padding: 20px; }
+      height: 100%;
+      padding: 80px; }
+      html body #main .outer {
+        background: #fff;
+        padding: 30px;
+        height: 100%; }
       html body #main #main-img {
         height: 100%;
         box-shadow: 0 0 5px; }
       html body #main #right-status {
-        height: 100%; }
+        height: 100%;
+        margin-left: 15px; }
+        html body #main #right-status .block {
+          box-shadow: 0 0 5px;
+          background: #F27935; }
+          html body #main #right-status .block .title {
+            font-size: 24px;
+            line-height: 1.5em;
+            color: #fff;
+            text-align: center; }
+          html body #main #right-status .block .code {
+            height: 150px;
+            text-align: center; }
+            html body #main #right-status .block .code img {
+              height: 150px; }
+        html body #main #right-status .weixin-code {
+          text-align: center; }
+          html body #main #right-status .weixin-code span {
+            color: #fff;
+            line-height: 1.5em; }
+          html body #main #right-status .weixin-code .lbl, html body #main #right-status .weixin-code .code {
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-weight: bold; }
+        html body #main #right-status .wizard {
+          color: #fff;
+          padding: 0;
+          margin: 0;
+          margin-top: 15px;
+          counter-reset: tutorialstep;
+          background: #91408F; }
+          html body #main #right-status .wizard li {
+            list-style: none;
+            position: relative;
+            margin-bottom: 15px;
+            border-top: 1px solid #fff;
+            padding: 15px;
+            padding-left: 80px; }
+            html body #main #right-status .wizard li:after {
+              counter-increment: tutorialstep;
+              content: counter(tutorialstep);
+              width: 30px;
+              height: 30px;
+              font-size: 16px;
+              color: #fff;
+              background: #327fc7;
+              font-weight: 300;
+              position: absolute;
+              left: 15px;
+              top: 50%;
+              margin-top: -15px;
+              text-align: center;
+              border-radius: 30px;
+              line-height: 30px; }
     html body #foot {
-      height: 20%; }
+      height: 20%;
+      width: 100%;
+      display: none; }

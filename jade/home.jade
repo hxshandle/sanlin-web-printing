@@ -3,10 +3,27 @@ html
   include _header
   body
     .row.full#main
-      .large-9.columns#main-img
-        img(src="img/20208-1680x1050.jpg")
-      .large-3.columns#right-status
+      .row.outer
+        .large-8.columns#main-img
+          img(src="img/20208-1680x1050.jpg")
+        .large-3.columns#right-status
+          .block
+            .title
+              三菱微信打印
+            .code
+              img(src="img/code.png")
+            .weixin-code
+              span.lbl 验证码：
+              span.code 123456
+          ul.wizard
+            li 扫描【三菱影像】公众号
+            li 发一张照片到公众号
+            li 输入打印机上的验证码
+            li 取照片
     .row.full#foot
-      .large-12.columns#info
+      .large-11.columns#info
+      .large-1.columns#code
+        
+
   include _foot
   
